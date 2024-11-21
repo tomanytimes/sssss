@@ -1,0 +1,1659 @@
+/* Reset */
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	color: #191919;
+	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	font-size: 62.5% !important;
+	word-break: keep-all;
+	word-wrap: break-word;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color : transparent !important;
+	animation:entry .3s ease forwards;
+  opacity: 0;
+}
+
+/* html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+} */
+
+body {
+	font-size: 1.6rem;
+}
+
+a {
+	color: inherit;
+	outline: none;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	font-family: inherit;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+select {
+	outline: none;
+	border: 1px solid transparent;
+	font-family: inherit;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+
+input, textarea {
+	font-family: inherit;
+	outline: none;
+	border: 1px solid transparent;
+}
+
+:focus {
+	outline: none;
+}
+
+::placeholder {
+	color: #a5a5a5;
+}
+
+html.lenis, html.lenis body {height: auto;}
+
+@-webkit-keyframes entry {
+	to{opacity: 1;}
+}
+
+@-moz-keyframes entry {
+	to{opacity: 1;}
+}
+
+@-ms-keyframes entry {
+	to{opacity: 1;}
+}
+
+@keyframes entry {
+	to{opacity: 1;}
+}
+
+
+/* Breakpoint */
+.mo {
+	display: none;
+}
+
+@media screen and (max-width:992px) {
+	.pc {
+		display: none;
+	}
+
+	.mo {
+		display: block;
+	}
+}
+@media screen and (max-width:768px) {
+	.tb {
+		display: none;
+	}
+}
+
+/* Hidden */
+.hidden {
+	overflow: hidden;
+}
+
+
+/* Display */
+.d-block {
+	display: block;
+}
+
+.d-inline {
+	display: inline-block;
+}
+
+.d-flex {
+	display: flex;
+}
+
+
+/* Flex Direction */
+.j-end {
+	justify-content: flex-end;
+}
+
+.a-cnt {
+	align-items: center;
+}
+
+
+/* Font Family */
+.fm-paper  {
+	font-family: 'Paperlogy';
+}
+
+.fm-gowun {
+	font-family: 'GowunBatang';
+}
+
+
+/* Font Weight */
+.fw-100 {
+	font-weight:100;
+}
+
+.fw-200 {
+	font-weight:200;
+}
+
+.fw-300 {
+	font-weight:300;
+}
+
+.fw-400 {
+	font-weight:400;
+}
+
+.fw-500 {
+	font-weight:500;
+}
+
+.fw-600 {
+	font-weight:600;
+}
+
+.fw-700 {
+	font-weight:700;
+}
+
+.fw-800 {
+	font-weight:800;
+}
+
+.fw-900 {
+	font-weight:800;
+}
+
+
+/* Font Align */
+.text-center {
+	text-align: center;
+}
+
+
+/* Font Color */
+.text-white {
+	color:#fff;
+}
+
+.text-red {
+	color:#da291c;
+}
+
+
+/* Wrap */
+.wrap {
+	/* max-width:720px;
+	width:100%;
+	margin:0 auto; */
+}
+
+/* Main */
+#main {
+	max-width:720px;
+	width:100%;
+	margin:0 auto;
+	overflow: hidden;
+}
+
+
+/* Container  */
+.container {
+	width:100%;
+	padding:0px 5%;
+}
+
+
+@media all and (min-width:481px) and (max-width: 576px) {
+	.container {
+		padding:0px 20px;
+	}
+}
+@media all and (min-width:340px) and (max-width: 480px)  {
+  .container {
+		padding:0px 15px;
+	}
+}
+
+
+/* Margin */
+.mb-10 {
+	margin-bottom:10px;
+}
+
+.mb-30 {
+	margin-bottom:30px;
+}
+
+.mb-40 {
+	margin-bottom:40px;
+}
+
+.mb-50 {
+	margin-bottom:50px;
+}
+
+.mb-60 {
+	margin-bottom:60px;
+}
+
+.mb-80 {
+	margin-bottom:80px;
+}
+
+
+@media all and (min-width:481px) and (max-width: 576px) {
+	.mb-30 {
+		margin-bottom:24px;
+	}
+	
+	.mb-40 {
+		margin-bottom:30px;
+	}
+	
+	.mb-50 {
+		margin-bottom:36px;
+	}
+	
+	.mb-60 {
+		margin-bottom:40px;
+	}
+	
+	.mb-80 {
+		margin-bottom:60px;
+	}
+	
+}
+@media all and (min-width:340px) and (max-width: 480px)  {
+	.mb-10 {
+		margin-bottom:6px;
+	}
+
+	.mb-30 {
+		margin-bottom:18px;
+	}
+	
+	.mb-40 {
+		margin-bottom:24px;
+	}
+	
+	.mb-50 {
+		margin-bottom:28px;
+	}
+	
+	.mb-60 {
+		margin-bottom:30px;
+	}
+	
+	.mb-80 {
+		margin-bottom:40px;
+	}
+	
+}
+
+
+
+/* Quick */
+#quick {
+	position: fixed;
+	right:0px;
+	bottom:40px;
+	z-index:999;
+	animation: quick-ani-start .75s ease forwards;
+	opacity:0;
+	cursor: pointer;
+}
+
+#quick .q-inner {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#quick .logo {
+	position: absolute;
+	top:50%;
+	left:-24px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:70px;
+	height:70px;
+	border-radius:50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#quick .logo .img {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	background-color: #fff;
+	transition:all .6s ease;
+}
+
+#quick .logo .img::before {
+	content: "";
+	display:block;
+	position: absolute;
+	top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index:2;
+  width:calc(100% + 2px);
+  height:calc(100% + 2px);
+  background-color: transparent;
+  border-radius:50%;
+  border:4px solid #da291c;
+	transition:all .6s ease;
+	opacity:0;
+	z-index:1;
+}
+
+#quick .txt {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height:60px;
+	padding:0px 10px 0px 55px;
+	background-color: #da291c;
+	border-radius: 5px;
+}
+
+#quick:hover .logo .img {
+	box-shadow: 0px 0px 10px 8px rgba(124,23,16,.6);
+}
+
+#quick:hover .logo .img::before {
+	opacity: 1;
+}
+
+#quick.on {
+	animation: quick-ani-end .75s ease forwards;
+	/* animation-direction: reverse; */
+} 
+
+
+@keyframes quick-ani-start {
+	from {
+		right:0px;
+		opacity:0;
+	}
+	to {
+		right:5%;
+		opacity:1;
+	}
+}
+
+@keyframes quick-ani-end {
+	from {
+		right:5%;
+		opacity:1;
+	}
+	to {
+		right:0px;
+		opacity:0;
+	}
+}
+
+@media all and (min-width:481px) and (max-width: 576px) {
+	#quick {
+		bottom:30px;
+	}
+
+	#quick .logo {
+		left:-18px;
+		width:56px;
+		height:56px;
+	}
+
+	#quick .logo .img::before {
+		border-width:3px;
+	}
+
+	#quick .logo .img img {
+		width:23px;
+	}
+
+	#quick .txt {
+		height:46px;
+		padding:0px 10px 0px 45px;
+	}
+
+	#quick .txt img {
+		width:95px;
+	}
+
+	@keyframes quick-ani {
+		from {
+			right:0px;
+			opacity:0;
+		}
+		to {
+			right:20px;
+			opacity:1;
+		}
+	}	
+}
+@media all and (min-width:340px) and (max-width: 480px)  {
+	#quick {
+		bottom:20px;
+	}
+
+	#quick .logo {
+		left:-12px;
+		width:44px;
+		height:44px;
+	}
+
+	#quick .logo .img::before {
+		border-width:2px;
+	}
+
+	#quick .logo .img img {
+		width:18px;
+	}
+
+	#quick .txt {
+		height:40px;
+		padding:0px 10px 0px 38px;
+	}
+
+	#quick .txt img {
+		width:90px;
+	}
+
+	@keyframes quick-ani {
+		from {
+			right:0px;
+			opacity:0;
+		}
+		to {
+			right:20px;
+			opacity:1;
+		}
+	}	
+}
+
+@charset "utf-8"; /* =============================================================================== 새디자인추가:::캠페인후원_긴급구호_시작 =============================================================================== */
+/* CSS Document */
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    z-index: 1;
+}
+
+#skipnavigation {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    left: -999px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* ggnb_left_top */
+.emergency_relief_cnts_top {
+    background: #4f4241;
+    margin: 0px auto;
+    width: 100%;
+    height: 29px;
+    border-bottom-color: #272120;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+    z-index: 9999;
+}
+
+.emergency_relief_cnts_top ul.util_left {
+    width: 420px;
+    height: 30px;
+    position: absolute;
+    left: 47.75%;
+    margin-left: -470px;
+    top: 0px;
+}
+
+.emergency_relief_cnts_top ul.util_left li {
+    float: left;
+}
+
+/* ggnb_topmenu_right */
+.emergency_relief_cnts_top ul.util_right {
+    height: 18px;
+    position: absolute;
+    right: 50%;
+    margin-right: -500px;
+    top: 6px;
+    text-align: right;
+}
+
+.emergency_relief_cnts_top ul.util_right li {
+    float: left;
+    margin: 0 5px;
+    font-family: 'NanumGothic',dotum;
+    font-size: 11px;
+    letter-spacing: -1px;
+    padding-top: 3px;
+    line-height: 14px;
+    color: #ccc;
+}
+
+.emergency_relief_cnts_top ul.util_right li a {
+    color: #cfcece;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.emergency_relief_cnts_top ul.util_right li a img {
+    margin-top: -1px;
+    ]}
+
+.emergency_relief_cnts_top ul.util_right li #sub1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.emergency_relief_cnts_top ul.util_right .btn {
+    padding: 0 !important;
+    margin-top: 0;
+}
+
+.emergency_relief_cnts_top ul.util_right .line {
+    background: url(../images/microsite/util_rigntLine.gif) no-repeat 0 4px;
+    width: 1px;
+    height: 14px;
+}
+
+.emergency_relief_cnts_top ul.util_right a.mypage {
+    color: #bb8283;
+    line-height: 14px;
+}
+
+.emergency_relief_cnts_top ul.util_right .save_user {
+    color: #fff;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.emergency_relief_cnts_top ul.util_right .save_user strong {
+    color: #ccc;
+}
+
+.member_facebook {
+    background: url(../images/util/icon_facebook.gif) no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    float: left;
+}
+
+.member_twitter {
+    background: url(../images/util/icon_twitter.gif) no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    float: left;
+}
+
+/* gnb_campain_layout */
+.CampaignList {
+    width: 240px;
+    background: #fff;
+    border: 2px solid #666;
+    /* background:url(../images/util/Campaign_bg.gif) no-repeat; */
+    position: absolute;
+    top: 28px;
+    left: 52.3%;
+    margin-left: -278px;
+    z-index: 9999;
+}
+
+.CampaignList ul {
+    padding: 0 14px;
+    padding-top: 6px;
+}
+
+.CampaignList ul li {
+    height: 39px;
+    padding-top: 7px;
+    border-top: 1px dashed #ddd;
+}
+
+.CampaignList ul li:first-child {
+    border-top: none;
+}
+
+.CampaignList ul li span.Campaign_icon {
+    width: 32px;
+    margin-right: 6px;
+}
+
+.Campaign_close {
+    position: relative;
+}
+
+.Campaign_close ul {
+    height: 26px;
+    padding: 0 10px;
+    background: #f4f5f7;
+}
+
+.Campaign_close ul li {
+    border: none;
+    float: right;
+    font-family: 'NanumGothic',dotum;
+    font-size: 11px;
+    display: block;
+    vertical-align: top;
+    height: 15px;
+}
+
+.Campaign_close ul li.close {
+    float: right;
+    display: none;
+}
+
+.Campaign_close ul li.close2 {
+    display: none;
+}
+
+.btn_campaign_go {
+    display: block;
+}
+
+.btn_campaign_go a {
+    background: url(../images/util/bullet01.gif) no-repeat 80px 5px;
+    width: 90px;
+    height: 16px;
+    display: inline-block;
+}
+
+.btn_campaign_close {
+    display: block;
+}
+
+.btn_campaign_close a {
+    background: url(../images/util/bullet02.gif) no-repeat 23px 3px;
+    width: 35px;
+    height: 16px;
+    display: inline-block;
+}
+
+/* emergency_relief new layout start */
+#emergency_relief_main_banner {
+    width: 100%;
+    height: 416px;
+    position: relative;
+    background: url(../images/microsite/Micro_visual_bg01.jpg) repeat-x;
+}
+
+#emergency_relief_main_banner .Micro_VS {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Micro_VS ul.Micro_VS01 {
+    position: absolute;
+    top: 22px;
+    left: 819px;
+}
+
+.Micro_VS ul.Micro_VS01 li {
+    float: left;
+}
+
+.Micro_VS ul.Micro_VS02 {
+    position: absolute;
+    top: 259px;
+    left: 0px;
+}
+
+.Micro_VS ul.Micro_VS02 li {
+    float: left;
+}
+
+.Micro_VS ul.Micro_VS03 {
+    position: absolute;
+    top: 268px;
+    left: 787px;
+}
+
+.Micro_VS ul.Micro_VS03 li.rolling_btn {
+    margin-left: 132px;
+}
+
+.Micro_VS_02 {
+    width: 1000px;
+    height: 416px;
+    margin: 0 auto;
+    background: url(../../images/microsite/Micro_visual03_bg02.jpg) no-repeat;
+    position: relative;
+}
+
+.Micro_VS_02 ul.Micro_VS01 {
+    position: absolute;
+    top: 22px;
+    left: 819px;
+}
+
+.Micro_VS_02 ul.Micro_VS01 li {
+    float: left;
+}
+
+.Micro_VS_02 ul.Micro_VS02 {
+    position: absolute;
+    top: 259px;
+    left: 0px;
+}
+
+.Micro_VS_02 ul.Micro_VS02 li {
+    float: left;
+}
+
+.Micro_VS_02 ul.Micro_VS03 {
+    position: absolute;
+    top: 268px;
+    left: 787px;
+}
+
+.Micro_VS_02 ul.Micro_VS03 li.rolling_btn {
+    margin-left: 132px;
+}
+
+/* img rolling banner */
+.Micro_VS .PhotoVisualWrap {
+    display: block;
+    width: 100%;
+    height: 416px;
+    overflow: hidden;
+}
+
+.Micro_VS .PhotoVisualWrap .PhotoVisualImgWrap {
+    width: 100%;
+    height: 100%;
+}
+
+.Micro_VS .PhotoVisualWrap .rolling_btns {
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+}
+
+.Micro_VS .PhotoVisualWrap .rolling_btns li {
+    float: left;
+    margin-left: 7px;
+}
+
+.Micro_VS .PhotoVisualWrap .rolling_btns .rolling_btn {
+    width: 15px;
+    height: 18px;
+    background: url('../images/microsite/rolling-btn.png') no-repeat;
+}
+
+.Micro_VS .PhotoVisualWrap .rolling_btns .rolling_btn div {
+    width: 15px;
+    height: 18px;
+    background: url('../images/microsite/rolling-btn.png') no-repeat;
+    cursor: pointer;
+    float: right;
+}
+
+.Micro_VS .PhotoVisualWrap .rolling_btns .selected div {
+    width: 15px;
+    height: 18px;
+    background: url('../images/microsite/rolling-btn_on.png') no-repeat;
+}
+
+/* 2014.12.22 일정기간 header 변경 */
+.emergency_relief_main_banner.ex {
+    position: relative;
+    width: 100%;
+    height: 416px;
+    background: url('../images/microsite/Micro_visual_bg01.jpg') repeat-x;
+}
+
+.emergency_relief_main_banner.ex .Micro_VS {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background: url('../images/microsite/22_bg.jpg') 0 0 no-repeat;
+    height: 100%;
+}
+
+.emergency_relief_main_banner.ex .Micro_VS .Micro_VS01 {
+    position: absolute;
+    top: 22px;
+    left: 819px;
+}
+
+.emergency_relief_main_banner.ex .Micro_VS .Micro_VS01 li {
+    float: left;
+}
+
+.emergency_relief_main_banner.ex .Micro_VS .Micro_VS02 {
+    position: absolute;
+    top: 317px;
+    left: 243px;
+}
+
+.emergency_relief_main_banner.ex .Micro_VS .Micro_VS03 {
+    position: absolute;
+    top: 295px;
+    left: 43px;
+}
+
+.emergency_relief_main_banner.ex iframe {
+    position: absolute;
+    top: 70px;
+    right: 22px;
+}
+
+/* container - contents */
+#emergency_relief_container {
+    width: 100%;
+    height: auto;
+    background: #331313;
+}
+
+#emergency_relief_container .page {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    min-height: 300px;
+}
+
+#emergency_relief_container .page .lnb_support {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+#emergency_relief_container .page .lnb_support h2 {
+    display: block;
+    margin: 36px 0 0 28px;
+}
+
+#emergency_relief_container .page .rnb_support {
+    display: inline-block;
+}
+
+#emergency_relief_container .page .rnb_support .info_area {
+    background: #f8f7f3;
+    display: block;
+    margin: 32px 20px 0 20px;
+    padding: 8px 0 5px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#emergency_relief_container .page .rnb_support .info_area span {
+    font-size: 12px;
+    font-family: 'NanumGothic','돋움',Dotum;
+    color: #ff4733;
+    letter-spacing: -0.99px;
+    line-height: 18px;
+    display: inline-block;
+    margin: 6px 20px 0 20px;
+    float: left;
+}
+
+#emergency_relief_container .page .rnb_support .info_area span div {
+    float: right;
+}
+
+/* footer */
+#emergency_relief_footer {
+    width: 100%;
+    height: auto;
+    background: #331313;
+}
+
+#emergency_relief_footer .inner {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 48px;
+    padding-top: 13px;
+}
+
+#emergency_relief_footer .inner .footer_ci {
+    float: left;
+    padding-top: 5px;
+}
+
+#emergency_relief_footer .inner .footer_ci li {
+    float: left;
+    margin-left: 32px;
+}
+
+#emergency_relief_footer .inner .footer_ci li:first-child {
+    margin-left: 30px;
+}
+
+#emergency_relief_footer .inner .right {
+    float: right;
+}
+
+#emergency_relief_footer .inner .right span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#emergency_relief_footer .inner .copyright {
+    margin-right: 17px;
+}
+
+#emergency_relief_footer .inner .ft_logo {
+    margin-right: 30px;
+}
+
+/* 긴급구호-서브메뉴 */
+.micro_support_tabmenu_area {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #331313;
+}
+
+.micro_support_tabmenu_area .inner {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.micro_support_tabmenu_area li {
+    float: left;
+}
+
+.micro_support_tabmenu_01 a {
+    background: url(../images/microsite/Micro_tab01.gif?20150414) no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 333px;
+    height: 76px;
+}
+
+.micro_support_tabmenu_01 a:hover, .micro_support_tabmenu_01 a.on {
+    background: url(../images/microsite/Micro_tab01_on.gif?20150414) no-repeat;
+}
+
+.micro_support_tabmenu_02 a {
+    background: url(../images/microsite/Micro_tab02.gif?20150414) no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 335px;
+    height: 76px;
+}
+
+.micro_support_tabmenu_02 a:hover, .micro_support_tabmenu_02 a.on {
+    background: url(../images/microsite/Micro_tab02_on.gif?20150414) no-repeat;
+}
+
+.micro_support_tabmenu_03 a {
+    background: url(../images/microsite/Micro_tab03.gif?20150414) no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 332px;
+    height: 76px;
+}
+
+.micro_support_tabmenu_03 a:hover, .micro_support_tabmenu_03 a.on {
+    background: url(../images/microsite/Micro_tab03_on.gif?20150414) no-repeat;
+}
+
+/* icheck 관련 오류 임시수정 */
+/* 공통 작은 팝업창 */
+.pop_wrap_common {
+    position: fixed;
+    left: 40%;
+    top: 35%;
+    z-index: 1000;
+    background: #ffffff;
+    font-family: 'NanumGothic','돋움', Dotum;
+    border: 1px solid #e8242c;
+}
+
+.pop_wrap_common .pop_header {
+    position: relative;
+    height: 60px;
+    background: #e8242c;
+}
+
+.pop_wrap_common .pop_header .h1_pop {
+    float: left;
+    padding-left: 14px;
+    margin-top: 15px;
+    margin-right: 15px;
+    color: #ffffff;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
+
+.pop_wrap_common .pop_header h2 {
+    float: left;
+    padding-left: 5px;
+    margin-top: 26px;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.pop_wrap_common .pop_content {
+    position: relative;
+    padding: 20px 20px 5px;
+    border-top: none;
+    min-height: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.pop_wrap_common .pop_footer {
+    background: #f6f6f6;
+    border-top: 1px solid #dadada;
+    height: 40px;
+}
+
+.pop_wrap_common .pop_footer span {
+    display: inline-block;
+}
+
+.pop_wrap_common .pop_footer .copyright {
+    float: left;
+    margin: 14px 0 0 11px;
+}
+
+.pop_wrap_common .pop_footer .btn {
+    float: right;
+    margin: 8px 10px 0 0;
+}
+
+.pop_wrap_common .pop_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 22px;
+    right: 18px;
+    background: url(../images/mypage/mysupport/layer/btn_close.gif) no-repeat 0px 0px;
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+/* 닫기버튼 */
+.pop_wrap_common .btn_area {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+/* 공통팝업용 버튼 */
+span.btn_txt2 {
+    display: inline-block;
+    margin: 0 2px;
+    background: url(../images/mypage/mysupport/layer/bg_btn2_1.gif) no-repeat 0px 0px;
+}
+
+span.btn_txt2 a, span.btn_txt2 button {
+    display: block;
+    padding: 8px 14px 8px;
+    background: url(../images/mypage/mysupport/layer/bg_btn2_2.gif) no-repeat right 0px;
+    font-size: 12px;
+    font-family: 'NanumGothic',"돋움", Dotum;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+span.btn_txt2:hover {
+    background: url(../images/mypage/mysupport/layer/bg_btn2_1.gif) no-repeat 0px -28px;
+}
+
+span.btn_txt2 a:hover, span.btn_txt2 button:hover {
+    background: url(../images/mypage/mysupport/layer/bg_btn2_2.gif) no-repeat right -28px;
+}
+
+span.btn_txt2 button {
+    height: 28px;
+    padding: 0 14px;
+    line-height: 28px;
+}
+
+span.btn_txt2 {
+    vertical-align: top !important;
+}
+
+span.btn_txt3 {
+    display: inline-block;
+    margin: 0 2px;
+    background: url(../images/mypage/mysupport/layer/bg_btn3_1.gif) no-repeat 0px 0px;
+}
+
+span.btn_txt3 a, span.btn_txt3 button {
+    display: block;
+    padding: 8px 14px 8px;
+    background: url(../images/mypage/mysupport/layer/bg_btn3_2.gif) no-repeat right 0px;
+    font-size: 12px;
+    font-family: 'NanumGothic',"돋움", Dotum;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+span.btn_txt3:hover {
+    background: url(../images/mypage/mysupport/layer/bg_btn3_1.gif) no-repeat 0px -28px;
+}
+
+span.btn_txt3 a:hover, span.btn_txt3 button:hover {
+    background: url(../images/mypage/mysupport/layer/bg_btn3_2.gif) no-repeat right -28px;
+}
+
+span.btn_txt3 button {
+    height: 28px;
+    padding: 0 14px;
+    line-height: 28px;
+}
+
+span.btn_txt3 {
+    vertical-align: top !important;
+}
+
+/* 후원 프로세스 변경 */
+#pop_bg02 .pop_wrap_common02 {
+    position: absolute;
+    z-index: 1000;
+    background: #ffffff;
+    font-family: '나눔고딕', NanumGothic;
+    border: 1px solid #e8242c;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_header {
+    position: relative;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_header .h1_pop {
+    float: left;
+    padding-left: 14px;
+    margin-top: 15px;
+    margin-right: 15px;
+    color: #ffffff;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_header h2 {
+    float: left;
+    padding-left: 5px;
+    margin-top: 23px;
+    color: #e24b3b;
+    font-weight: normal;
+    font-size: 21px;
+    letter-spacing: -0.1em;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_content .pop_content_v1 {
+    text-align: center;
+    background: #faf9f9;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 25px;
+    width: 330px;
+    margin: auto;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_content .pop_content_v2 {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+    color: #777;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_content {
+    position: relative;
+    padding: 20px 20px;
+    border-top: none;
+    min-height: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_content .rt {
+    color: #e85b4c;
+    font-size: 14px;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_content p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #424242;
+    line-height: 23px;
+    letter-spacing: -0.09em;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_close {
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 22px;
+    right: 18px;
+    background: url(../images/support/btn_close_v2.gif) no-repeat 0px 0px;
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+/* 닫기버튼 */
+#pop_bg02 .pop_wrap_common02 .btn_area {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+#pop_bg02 .pop_wrap_common02 .copyright {
+    font-size: 10px !important;
+    color: #777 !important;
+    text-align: center;
+    letter-spacing: 0.05em !important;
+}
+
+#pop_bg02 .pop_wrap_common02 .copyright span {
+    font-weight: bold;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_footer span {
+    display: inline-block;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_footer .copyright {
+    text-align: center;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_footer .close_day {
+    float: left;
+    display: block;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_footer .close_day input[type=checkbox] {
+    margin: 0;
+    vertical-align: middle;
+}
+
+#pop_bg02 .pop_wrap_common02 .pop_footer .close_day label {
+    margin: 10px 0 0 30px;
+    display: block;
+}
+
+/* =============================================================================== 새디자인추가:::캠페인후원_긴급구호_마감 =============================================================================== */
+/* 2015.04.14 비주얼 롤링 추가  */
+.emergency_relief_main_banner.newRolling {
+    potition: relative;
+    height: 416px;
+    overflow: hidden;
+    text-align: center;
+    background: url(/images/microsite/Micro_visual_bg01.jpg) left 0 repeat-x;
+}
+
+.emergency_relief_main_banner.newRolling .Micro_VS {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.emergency_relief_main_banner.newRolling .Micro_VS01 {
+    left: auto !important;
+    right: 25px !important;
+    top: 20px !important;
+}
+
+.emergency_relief_main_banner.newRolling .Micro_VS ul.Micro_VS01 {
+    z-index: 10;
+}
+
+.emergency_relief_main_banner.newRolling .rollingArea {
+    height: 416px;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+}
+
+.emergency_relief_main_banner.newRolling .rollingArea #slides .slidesjs-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1000px;
+    height: 416px;
+}
+
+.emergency_relief_main_banner.newRolling .rollingArea #slides .slidesjs-pagination {
+    position: relative;
+    z-index: 10;
+    top: -43px;
+    text-align: center;
+}
+
+.emergency_relief_main_banner.newRolling .rollingArea #slides .slidesjs-pagination .slidesjs-pagination-item {
+    display: inline-block;
+}
+
+.emergency_relief_main_banner.newRolling .rollingArea #slides .slidesjs-pagination .slidesjs-pagination-item a {
+    background: url("../images/microsite/page_off.png") no-repeat center center;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    text-indent: -999px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.emergency_relief_main_banner.newRolling .rollingArea #slides .slidesjs-pagination .slidesjs-pagination-item a.active {
+    background: url("../images/microsite/page_on.png") no-repeat center center;
+}
+
+.newTab03 {
+    letter-spacing: -1px;
+}
+
+.newTab03 .sec1 {
+    height: 456px;
+    background: url("/images/microsite/new_content1_bg.png") no-repeat left top;
+    position: relative;
+}
+
+.newTab03 .sec1 .youtube {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+.newTab03 .sec1 .contArea {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 415px;
+}
+
+.newTab03 .sec1 .contArea .tit {
+    padding-top: 7px;
+    margin-bottom: 15px;
+}
+
+.newTab03 .sec1 .contArea .txt {
+    margin-top: 13px;
+    font-size: 13px;
+    color: #656565;
+    line-height: 20px;
+}
+
+.newTab03 .sec1 .contArea .txt em {
+    font-style: normal;
+    color: #ea1d25;
+}
+
+.newTab03 .sec2 {
+    padding: 18px 0 10px 87px;
+}
+
+.newTab03 .sec2 .tit {
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+.newTab03 .sec2 ul {
+}
+
+.newTab03 .sec2 ul li {
+    position: relative;
+    padding-left: 175px;
+    min-height: 115px;
+    margin-bottom: 20px;
+    padding-top: 23px;
+}
+
+.newTab03 .sec2 ul li .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.newTab03 .sec2 ul li .sit {
+    margin-bottom: 8px;
+}
+
+.newTab03 .sec2 ul li .txt {
+    font-size: 14px;
+    color: #656565;
+    line-height: 22px;
+}
+
+.newTab03 .topArea {
+    background: url("/images/microsite/new_content_dotline.png") repeat-x left bottom;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.newTab03 .topArea a {
+    display: inline-block;
+}
+
+.newTab03 .topArea img {
+    vertical-align: top;
+}
+
+.newTab03 .sec2 ul li .txt em {
+    font-style: normal;
+    color: #ea1d25;
+}
+
+.newTab03 .sec3 {
+    padding: 70px 0 40px 90px;
+}
+
+.newTab03 .sec3 .contArea {
+    overflow: hidden;
+}
+
+.newTab03 .sec3 .contArea:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.newTab03 .sec3 .img {
+    float: left;
+    margin-right: 40px;
+}
+
+.newTab03 .sec3 .cont {
+    float: left;
+}
+
+.newTab03 .sec3 .cont .tit {
+    margin-bottom: 18px;
+}
+
+/* 은행 이체,카드 일시중단 안내 팝업 */
+.pop_wrap {
+    position: absolute;
+    z-index: 1000;
+    background: #ffffff;
+}
+
+.pop_wrap .pop_inner {
+    border: 2px solid #e24b3b;
+}
+
+.pop_wrap .pop_header03 {
+    position: relative;
+    height: 70px;
+    background: #fdfdfd;
+    margin: 1px 14px 0 13px;
+    border-bottom: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+
+.pop_wrap .pop_header03 .h1_pop {
+    float: left;
+    padding-left: 7px;
+    margin-top: 18px;
+}
+
+.pop_wrap .pop_content05 {
+    position: relative;
+    padding: 20px 20px 16px;
+    box-sizing: border-box;
+}
+
+/* 내용미리보기 팝업 */
+.pop_wrap .pop_content_bank {
+    position: relative;
+    padding: 20px 14px 20px 20px;
+    box-sizing: border-box;
+    font-family: '나눔고딕', NanumGothic;
+}
+
+.pop_wrap .pop_content_bank h3 {
+    font-size: 18px;
+    color: #4e2320;
+    font-weight: normal;
+    font-family: '나눔고딕', NanumGothic;
+}
+
+.pop_wrap .pop_content_bank .txt1 {
+    font-size: 13px;
+    color: #555555;
+    line-height: 21px;
+    margin-top: 20px;
+    font-family: '나눔고딕', NanumGothic;
+}
+
+.pop_wrap .pop_content_bank .txt2 {
+    font-size: 13px;
+    color: #333333;
+    line-height: 21px;
+    margin-top: 22px;
+    display: block;
+    font-family: '나눔고딕', NanumGothic;
+}
+
+.pop_wrap .pop_content_bank .noti {
+    font-size: 13px;
+    color: #555555;
+    line-height: 21px;
+    margin-top: 22px;
+    display: block;
+    font-family: '나눔고딕', NanumGothic;
+}
+
+.pop_wrap .pop_footer02 {
+    background: #f6f6f6;
+    border-top: 1px solid #dadada;
+    height: 33px;
+    padding: 9px 0 0 12px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.pop_wrap .pop_footer02 input[type="checkbox"], .pop_wrap .pop_footer02 label {
+    vertical-align: top;
+    height: 13px;
+    font-size: 12px;
+    font-family: '나눔고딕', gulim;
+    color: #555555;
+    margin-top: 4px;
+}
+
+.pop_wrap .pop_footer02 .btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 10;
+}
+
+.pop_wrap .pop_footer02.type2 {
+    height: 33px;
+    padding: 7px 0 0 12px;
+}
+
+.pop_wrap .pop_footer02.type2 label {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.pop_wrap .pop_close02 {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    background: url(../images/mypage/mysupport/layer/btn_close_03.gif) no-repeat 0px 0px;
+    text-indent: -9999px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 99;
+}
+
+/* 닫기버튼 */
+/* 은행 이체,카드 일시중단 안내 팝업 */

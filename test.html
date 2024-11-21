@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper FullPage</title>
+
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Arial", sans-serif;
+        overflow: hidden; /* 스크롤바 숨기기 */
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background: #000;
+      }
+
+      .item {
+        width: 80%;
+        text-align: center;
+      }
+
+      .item p {
+        margin: 10px 0;
+      }
+
+      .item img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Section 1 -->
+        <div class="swiper-slide" style="background: #1a1a1a">
+          <div class="item">
+            <p class="t01 fm-paper fw-600 text-white">하지만</p>
+            <p class="t01 fm-paper fw-600 text-white">전 세계 하루 동안</p>
+            <p class="t01 fm-paper fw-600 text-white">사망하는 산모 수</p>
+            <p class="t02 fm-paper fw-800 text-red">
+              <em class="d-inline rest-one"></em>800<span class="d-inline">명</span><em class="d-inline rest-two"></em>
+            </p>
+            <p class="t03 fm-paper fw-400 text-white">
+              이 중 <span class="fw-600 line">산모 사망의 95%는</span><br />
+              <span class="fw-600 line">개발도상국에서 발생</span>
+            </p>
+            <p class="flx text-white">출처 : WHO 세계보건기구, 2020</p>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="swiper-slide" style="background: #333">
+          <div class="item">
+            <p class="t01 fm-paper fw-500 mb">산모가 사망하는<br />가장 큰 이유는</p>
+            <p class="t01 fm-paper fw-500">
+              <span class="line">빈곤으로 기본적인 진료조차</span><br />
+              <span class="line">받지 못하기 때문에</span>
+            </p>
+            <p class="t02 fm-paper fw-700 text-red">
+              하루에 수백 명의 아기가<br />
+              <span class="line">생명을 잃고 있습니다.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="swiper-slide" style="background: #555">
+          <div class="item">
+            <p class="t01 mb fm-paper fw-600 text-white">세이브더칠드런은</p>
+            <p class="t01 fm-paper fw-600 text-white">소중한 생명을 포기할 수 없기에</p>
+            <p class="t02 fm-paper fw-700">
+              <span class="d-inline text-red">매년</span><br />
+              <span class="d-inline text-red">한 생명을 살리는</span><br />
+              <span class="d-inline text-red">따뜻한 움직임을</span><br />
+              <span class="d-inline text-red">시작합니다.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="swiper-slide" style="background: #777">
+          <div class="item">
+            <p class="t01 mb fm-paper fw-600">이 여정을</p>
+            <p class="t01 fm-paper fw-600">함께 만들어갈 사람들</p>
+            <img src="./assets/img/main/sec03_tit.png" alt="더 레드 선수단" />
+            <p class="t03 fm-paper fw-700">신생아를 살리는</p>
+            <p class="t03 fm-paper fw-700">
+              <span class="line"><span class="text-red">더 레드 선수단</span>이</span>
+            </p>
+            <p class="t03 fm-paper fw-700"><span class="line">되어주세요.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      // Swiper 초기화
+      const swiper = new Swiper(".swiper-container", {
+        direction: "vertical", // 수직 스크롤
+        mousewheel: true, // 마우스 휠 이벤트 활성화
+        speed: 1000, // 섹션 전환 속도
+        loop: false, // 섹션 반복 방지
+        on: {
+          slideChange: function () {
+            console.log("현재 슬라이드:", this.activeIndex);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
